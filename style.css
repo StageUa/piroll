@@ -113,7 +113,7 @@ body {
 	background-color: transparent;
 	border: 2px solid #0fc9c3;
 	transition: all 1s ease-out;
-	border-radius: 5px;
+	border-radius: 4px;
 }
 
 .btn__text:hover {
