@@ -78,31 +78,46 @@ body {
 	color: #878787;
 }
 
-.form__button {	
-	margin: 5px;
-}
-
 .btn {
-	border: none;
-	padding: 0;
-}
-
-.button {	
-	display: block;
-
+	display: inline-block;
+	position: relative;
 	width: 180px;
 	height: 55px;
-	padding: 10px 10px 30px 10px;
-
-	text-decoration: none;
-
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
-	line-height: 84px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #000;
 
 	background-color: #0fc9c3;
+	margin: 5px;	
+}
 
+.btn__text {	
+	display: inline-block;
+
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+
+	text-decoration: none;
+	font-size: 12px;
+	font-family: inherit;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+
+	cursor: pointer;
+	text-align: center;	
+}
+
+.btn:hover {
+	background-color: transparent;
+	border: 2px solid #0fc9c3;
+	transition: all 1s ease-out;
+	border-radius: 5px;
+}
+
+.btn__text:hover {
+	color: #0fc9c3;
+	font-size: 14px;
+	font-weight: 600;
 }
