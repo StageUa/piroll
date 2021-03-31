@@ -215,16 +215,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Featured works ================
 =================================*/
-.featured {
+.section {
+	display: block;
+	width: 1250px;
+	text-align: center;
+
 	margin: 10px 10px;
 }
 
 .works {
-	display: block;
-	width: 1140px;
 	margin: 90px 50px;
 	padding: 5px;
-	text-align: center;
 }
 
 .works__img {
@@ -237,4 +238,4 @@ h1, h2, h3, h4, h5, h6 {
 	transition: .2s linear;
 }
 
-/* our services */
+/* Our services */
