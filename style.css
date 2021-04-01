@@ -258,7 +258,7 @@ p {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 50px 50px;
+	margin: 50px 50px 150px 50px;
 }
 
 .service-one {
@@ -378,3 +378,90 @@ p {
 
 /* Small team =================
 ===============================*/
+.cards {
+	margin: 50px 50px;
+}
+
+.card__item {
+	display: block;
+	width: 300px;
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+}
+
+.card__photo {
+	width: 300px;
+	height: 370px;
+}
+
+.info__photo {
+	display: block;
+	visibility: hidden;
+	width: 260px;
+	height: 200px;
+
+	position: absolute;
+	top: 160px;
+	right: 0;
+	bottom: 0;
+	left: 25px;
+	z-index: 1;
+
+	border: 1px solid #6ff4eb ;
+	background-color: #6ff4eb;
+}
+
+.info__title {
+	font-family: 'Merriweather', serif;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: left;
+
+	padding: 15px;
+}
+
+.info__subtitle {
+	font-family: 'Merriweather', serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	font-style: italic;
+	text-transform: none;
+
+	color: #738d8b;
+}
+
+.info__text {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+
+	padding: 0 15px 20px;
+}
+
+.info-social {
+	display: flex;
+	flex-direction: row;
+	margin: 10px 0 10px 10px;
+	padding: 5px;
+}
+
+.info-link {
+	text-decoration: none;
+	cursor: pointer;
+
+}
+
+.info-link:nth-child(n+2) {
+	margin-left: 10px;
+}
+
+.card__item:hover > .info__photo {	 
+	display: block;
+	visibility: visible;
+}
