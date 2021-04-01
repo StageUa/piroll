@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +16,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+p {
 	padding: 0;
 	margin: 0;
 }
@@ -152,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__title {
+	margin: 5px;
 	padding: 10px;
 
 	font-family: 'Merriweather', serif;
@@ -164,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__subtitle {
+	margin: 5px;
 	padding: 10px;
 
 	font-family: 'Merriweather', serif;
@@ -211,6 +224,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 28px;
+
+	padding-top: 20px;
 }
 
 /*Featured works ================
@@ -239,3 +254,125 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Our services */
+.services__item {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 50px 50px;
+}
+
+.service-one {
+	display: block;
+	width: 550px;
+	height: 320px;
+	background-image: url("images/services1.png");
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding: 5px;
+}
+
+.service-two {
+	display: block;
+	width: 370px;
+	height: 320px;
+	background-image: url("images/services2.png");
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding: 5px;
+}
+
+.service-three {
+	display: block;
+	width: 550px;
+	height: 320px;
+	background-image: url("images/services3.png");
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding: 5px;
+}
+
+.service-four {
+	display: block;
+	width: 370px;
+	height: 320px;
+	background-image: url("images/services4.png");
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding: 5px;
+}
+
+.service-five {
+	display: block;
+	width: 370px;
+	height: 320px;
+	background-image: url("images/services5.png");
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding: 5px;
+}
+
+.service-six {
+	display: block;
+	width: 550px;
+	height: 320px;
+	background-image: url("images/services6.png");
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding: 5px;
+}
+
+.bg:hover {
+	background-color: #5f5f5f;
+	background-image: none;
+	opacity: .9;
+	transition: .2s linear;
+}
+
+.bg h2:hover,
+.bg p:hover {
+	color: #0fc9c3;
+	transition: .2s linear;
+}
+
+.services__title {
+	
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 29px;
+	text-transform: uppercase;
+
+	margin: 70px 0 0 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+.services__text {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+
+	margin-left: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+.services__more {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	float: left;
+	margin-left: 20px;
+	padding: 10px;
+
+	text-decoration: none;
+	color: #0fc9c3;
+}
+
+.services__more:hover {
+	text-decoration: underline;
+} 
+
