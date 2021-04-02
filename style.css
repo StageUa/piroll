@@ -379,7 +379,11 @@ p {
 /* Small team =================
 ===============================*/
 .cards {
+	display: flex;
+	flex-wrap: wrap;
 	margin: 50px 50px;
+	padding: 10px;
+	justify-content: center;
 }
 
 .card__item {
@@ -464,4 +468,11 @@ p {
 .card__item:hover > .info__photo {	 
 	display: block;
 	visibility: visible;
+	box-shadow: 0 5px 5px #3f3f3f;
+
 }
+
+.card__photo:hover {
+	box-shadow: 0 5px 5px #3f3f3f;
+}
+
