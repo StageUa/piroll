@@ -381,7 +381,7 @@ p {
 .cards {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 50px 50px;
+	margin: 50px 50px 100px;
 	padding: 10px;
 	justify-content: center;
 }
@@ -476,3 +476,105 @@ p {
 	box-shadow: 0 5px 5px #3f3f3f;
 }
 
+/* What they says ===================
+=====================================*/
+.comments {
+	margin: 50px 80px;
+	padding: 10px;
+}
+
+.comments__block {
+	display: flex;
+	justify-content: space-around;
+}
+
+.comments__photo {
+	display: block;
+	width: 300px;
+	text-align: left;
+	margin: 10px;
+}
+
+.comments__img {
+	padding: 10px 10px 10px 20px;
+
+	box-shadow: 0 5px 15px #3f3f3f;	
+}
+
+.comments__desc {
+	display: block;
+	width: 500px;
+	height: 300px;
+	margin-top: 40px;
+	padding: 10px;
+	background-color: #eaebed;
+}
+
+.comments__header {
+	margin: 10px;
+}
+
+.align {
+	text-align: center;
+	padding: 15px;	
+}
+
+.comments__text {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+
+	color: #98989a;
+
+	margin: 10px 20px;
+	padding: 10px 25px 20px;
+}
+
+.slider {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.slider__arrow {
+	margin: 20px 50px 50px 5px;
+	padding: 5px;
+}
+
+.slider-left {
+	margin: 5px;
+	padding: 5px;
+}
+
+.sl-l:hover {
+	background-color: #0fc9c3;
+}
+
+.slider-right {
+	margin: 5px;
+	padding: 5px;
+}
+
+.sl-r:hover {
+	background-color: #0fc9c3;
+}
+
+.slider__dots {
+	margin: 20px 0 50px 150px;
+	padding: 5px 5px 5px 30px;
+}
+
+.slider-dot {
+	display: inline-block;
+	border: 5px solid #5f5f5f;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.slider-dot:hover {
+	border-color: #0fc9c3;
+}
+
+/* Logos */
